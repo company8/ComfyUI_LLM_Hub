@@ -1,0 +1,7 @@
+transformers
+torch==2.6.0
+accelerate
+bitsandbytes
+llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on" 
+
+# Note to self: Compling from source is more robust, make sure to check CUDA version though.  ";-CMAKE_CUDA_ARCHITECTURES=80" (GPU depended ask Gemini for this)for most optimization if you know the exact GPU.
