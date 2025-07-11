@@ -29,6 +29,7 @@ If you get error message about missing `llama-cpp`, try these manual steps:
 python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on"
 ```
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
+
 Note: "--verbose" is just to see the process of the compling, you can delete it if you wish.
 
 
