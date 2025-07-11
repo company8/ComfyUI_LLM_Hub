@@ -56,13 +56,13 @@ Below is a detailed overview of these parameters:
   also introduce more randomness. Default: `1.0`.
 - **`top_p`**: Also known as nucleus sampling, this parameter controls the cumulative probability distribution
   cutoff. The model will only consider the top p% of tokens with the highest probabilities for sampling. Reducing this
-  value helps in controlling the generation quality by avoiding low-probability tokens. Default: `0.9`.
+  value helps in controlling the generation quality by avoiding low-probability tokens. Default: `0.8`.
 - **`top_k`**: Limits the number of highest probability tokens considered for each step of the generation. A
   value of `0` means no limit. This parameter can prevent the model from focusing too narrowly on the top choices,
-  promoting diversity in the generated text. Default: `50`.
+  promoting diversity in the generated text. Default: `10`.
 - **`repetition_penalty`**: Adjusts the likelihood of tokens that have already appeared in the
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
-  to appear again. Default: `1.2`.
+  to appear again. Default: `1.3`.
 
 These parameters provide granular control over the text generation capabilities of the `LLM Hub` Node, allowing
 users to fine-tune the behavior of the underlying models to best fit their application requirements.
