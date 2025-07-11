@@ -7,7 +7,7 @@ text-to-image prompt into a more detailed and improved prompt.
 
 <img src="https://raw.githubusercontent.com/company8/ComfyUI_LLM_Hub/refs/heads/main/img/README.png" alt="LLM Hub for ComfyUI">
 
-## 🛠️ Requirements
+## 📝 Requirements
 
 - Create a directory named **`LLMs`** inside **`ComfyUI/models/text_encoders/`**
 - Create a another new directory for each LLM with the model name inside **`LLMs`**, so you don't get confused and the node doesn't use the wrong one.
@@ -31,21 +31,18 @@ ComfyUI/
                 └── special_tokens_map.json (Optional)
 ```
 
+GGUF models don't need to be named "model.gguf".
 
-If you get error message about missing **`llama-cpp`**, try these manual steps:
+## 🛠️ Installation
 
-- Run the following commands:
+- Run the following command:
 ```
-pip install --verbose --config-settings=cmake.args="-DGGML_CUDA=on" llama-cpp-python
+pip install -r --verbose requirements.txt
 ```
-Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU. 
-
-You can also delete "--verbose" if you don't want to see the process of the compiling.
-
-**`Notes`**: 
-- GGUF models don't need to be named "model.gguf".
+You can delete "--verbose" if you don't want to see the process of the compiling.
 
 ## ⚙️ LLM Settings 
+
 The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
 generation process and model behavior.
 
