@@ -17,9 +17,9 @@ ComfyUI/
 └── models/
     └── text_encoders/
         └── LLMs/
-            └── **GGUF_model**/
+            └── GGUF_model/
                 └── model.gguf
-            └── **safetensors_model**/
+            └── safetensors_model/
                 └── model.safetensors
                 └── config.json
                 └── generation_config.json
