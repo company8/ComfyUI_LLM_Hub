@@ -1,64 +1,33 @@
-# Searge-LLM for ComfyUI
+# 🧠 LLM Hub
 
-A prompt-generator or prompt-improvement node for ComfyUI, utilizing the power of a language model to turn a provided
+A prompt-generator for ComfyUI, utilizing the power of a language model to turn a provided
 text-to-image prompt into a more detailed and improved prompt.
 
-![Custom node Searge-LLM for ComfyUI](img/SeargeLLM-Flux.jpg "Searge-LLM for ComfyUI Logo")
 
-## Install the language model
-- Create a new folder called `llm_gguf` in the `ComfyUI/models` directory.
-- Download the file `Mistral-7B-Instruct-v0.3.Q4_K_M.gguf` **(4.37 GB)**.
-  from the repository `MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF` on HuggingFace.
-  - [download link to the gguf model](https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf)
-- place `Mistral-7B-Instruct-v0.3.Q4_K_M.gguf` in the `ComfyUI/models/llm_gguf` directory.
+## Requirements
 
-### Note
-- Currently the node requires the language model as a `gguf` file and only works with models that are
-  supported by `llama-cpp-python`.
-
-## Potential problems
-(this was only tested this on Windows)
+Create a directory named "LLMs" in "ComfyUI/models/text_encoders/LLMs"
+Place your LLM models there.
+Create a new directory for each LLM with the model name, so you don't get confused and the node doesn't use the wrong one.
+Every .safetensors model needs the .json files AND the model has to be named "model.safetensors" (Not my choice, that's HuggingFace because we are using Transformers for inference)
+Reasoning behind the directory is if you use HiDream and tried to generate without the llama as a T.E (Text Encoder) it would produce garbage, this way you can use the same model for both T.E and as a prompt generator.
 
 If you get error message about missing `llama-cpp`, try these manual steps:
 
-- These instruction are assuming that you use the portable version of ComfyUI, otherwise make sure to run these commands
-  in the pything v-env that you're using for ComfyUI.
-- Open a command line interface in the directory `ComfyUI_windows_portable/python_embeded`.
-- It's important to run these commands in the `ComfyUI_windows_portable/python_embeded` directory.
 - Run the following commands:
 ```
-python -m pip install https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/cpu/llama_cpp_python-0.2.89+cpuavx2-cp311-cp311-win_amd64.whl
-python -m pip install https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/textgen-webui/llama_cpp_python_cuda-0.2.89+cu121-cp311-cp311-win_amd64.whl
+python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on"
 ```
+Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
+Note: "--verbose" is just to see the process of the compling, you can delete it if you wish.
 
-### FAQ
-- "I still get errors related to llama-cpp, what should I do?"
-  - You can try manually installing llama-cpp in the python environment that you use to run ComfyUI. To do that first
-    uninstall any package including the name llama cpp from your python environment. After that you can install the
-    llama-cpp package with the command `python -m pip install llama-cpp-python`. If the problem persist after these
-    steps, please report it in the Github issue tracker of this project.
-- "Can you add [FEATURE] to this node?"
-  - Maybe. Maybe not. You can always post your idea in the issue tracker on Github as a feature request and if I like
-    the idea and find the time for it, I may implement it in a future update.
 
-## Searge LLM Node
-Configure the `Searge_LLM_Node` with the necessary parameters within your ComfyUI project to utilize its capabilities
-fully:
-
-- `text`: The input text for the language model to process.
-- `model`: The directory name of the model within `models/llm_gguf` you wish to use.
-- `max_tokens`: Maximum number of tokens for the generated text, adjustable according to your needs.
-- `apply_instructions`: 
-- `instructions`: The instructions for the language model to generate a prompt. It supports the placeholder
-  `{prompt}` to insert the prompt from the `text` input.
-  **Example:** `Generate a prompt from "{prompt}"`
-
-## Advanced Options Node 
-The `Searge_AdvOptionsNode` offers a range of configurable parameters allowing for precise control over the text
+## LLM Settings 
+The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
 generation process and model behavior.
 
-*The default values on this node are also the defaults that `Searge_LLM_Node`*
-*uses when no `Searge_AdvOptionsNode` is connected to it.*
+*The values on this node are also the defaults that `LLM_Hub`*
+*uses when `LLM_Settings` isn't connected.*
 
 Below is a detailed overview of these parameters:
 
@@ -78,10 +47,6 @@ Below is a detailed overview of these parameters:
 These parameters provide granular control over the text generation capabilities of the `Searge_LLM_Node`, allowing
 users to fine-tune the behavior of the underlying models to best fit their application requirements.
 
-## License
-The Searge_LLM_Node is released under the MIT License. Feel free to use and modify it for your personal or commercial
-projects.
 
-## Acknowledgments
-- Based on the LLM_Node custom extension by Big-Idea-Technology, found
-  [here on Github](https://github.com/Big-Idea-Technology/ComfyUI_LLM_Node)
+## License
+Released under the MIT License. Feel free to use and modify it for your projects, commercial or personal.
