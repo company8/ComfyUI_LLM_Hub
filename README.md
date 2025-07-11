@@ -30,7 +30,7 @@ python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-
 ```
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
 
-Note: "--verbose" is just to see the process of the compling, you can delete it if you wish.
+`Note:` You can delete "--verbose" if you don't want to see the process of the compling.
 
 
 ## LLM Settings 
