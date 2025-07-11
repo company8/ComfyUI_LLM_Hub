@@ -8,7 +8,7 @@ text-to-image prompt into a more detailed and improved prompt.
 
 - Create a directory named "LLMs" in "ComfyUI/models/text_encoders/LLMs"
 - Create a another new directory for each LLM with the model name inside "LLMs", so you don't get confused and the node doesn't use the wrong one.
-- Place your LLM models in the respective directory.
+- Place your LLM models in their respective directory.
 - Every .safetensors model needs the .json files AND the model has to be named **model.safetensors** (Not my choice, that's HuggingFace because we are using Transformers for inference)
 
 How your directory structure should look like:
@@ -17,6 +17,8 @@ ComfyUI/
 └── models/
     └── text_encoders/
         └── LLMs/
+            └── GGUF_model
+                └── model.gguf
             └── safetensors_model
                 └── model.safetensors
                 └── config.json
@@ -24,8 +26,6 @@ ComfyUI/
                 └── tokenizer.json
                 └── tokenizer_config.json
                 └── special_tokens_map.json
-            └── GGUF_model
-                └── model.gguf
 ```
 
 Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage / error out. This way you can use the same model for both T.E and as a prompt generator.
