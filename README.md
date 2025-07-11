@@ -54,16 +54,16 @@ generation process and model behavior.
 
 Below is a detailed overview of these parameters:
 
-- **Temperature (`temperature`):** Controls the randomness in the text generation process. Lower values make the model
+- **`temperature`**: Controls the randomness in the text generation process. Lower values make the model
   more confident in its predictions, leading to less variability in output. Higher values increase diversity but can
   also introduce more randomness. Default: `1.0`.
-- **Top-p (`top_p`):** Also known as nucleus sampling, this parameter controls the cumulative probability distribution
+- **`top_p`**: Also known as nucleus sampling, this parameter controls the cumulative probability distribution
   cutoff. The model will only consider the top p% of tokens with the highest probabilities for sampling. Reducing this
   value helps in controlling the generation quality by avoiding low-probability tokens. Default: `0.9`.
-- **Top-k (`top_k`):** Limits the number of highest probability tokens considered for each step of the generation. A
+- **`top_k`**: Limits the number of highest probability tokens considered for each step of the generation. A
   value of `0` means no limit. This parameter can prevent the model from focusing too narrowly on the top choices,
   promoting diversity in the generated text. Default: `50`.
-- **Repetition Penalty (`repetition_penalty`):** Adjusts the likelihood of tokens that have already appeared in the
+- **`repetition_penalty`**: Adjusts the likelihood of tokens that have already appeared in the
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
   to appear again. Default: `1.2`.
 
