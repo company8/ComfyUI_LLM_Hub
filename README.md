@@ -36,8 +36,8 @@ Note: "--verbose" is just to see the process of the compling, you can delete it 
 The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
 generation process and model behavior.
 
-*The values on this node are also the defaults that `LLM_Hub`*
-*uses when `LLM_Settings` isn't connected.*
+*The values on this node are also the defaults that `LLM Hub`*
+*uses when `LLM Settings` isn't connected.*
 
 Below is a detailed overview of these parameters:
 
@@ -54,7 +54,7 @@ Below is a detailed overview of these parameters:
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
   to appear again. Default: `1.2`.
 
-These parameters provide granular control over the text generation capabilities of the `Searge_LLM_Node`, allowing
+These parameters provide granular control over the text generation capabilities of the `LLM Hub` Node, allowing
 users to fine-tune the behavior of the underlying models to best fit their application requirements.
 
 
