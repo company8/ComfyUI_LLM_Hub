@@ -42,7 +42,7 @@ python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
 
 **`Notes`**: 
-- You can delete "--verbose" if you don't want to see the process of the compling.
+- You can delete "--verbose" if you don't want to see the process of the compiling.
 - GGUF models don't need to be named "model.gguf".
 
 ## ⚙️ LLM Settings 
