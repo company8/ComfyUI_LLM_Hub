@@ -7,9 +7,9 @@ text-to-image prompt into a more detailed and improved prompt.
 ## Requirements
 
 - Create a directory named "LLMs" in "ComfyUI/models/text_encoders/LLMs"
-- Create a another new directory for each LLM with the model name, so you don't get confused and the node doesn't use the wrong one.
+- Create a another new directory for each LLM with the model name inside "LLMs", so you don't get confused and the node doesn't use the wrong one.
 - Place your LLM models in the respective directory.
-- Every .safetensors model needs the .json files AND the model has to be named "model.safetensors" (Not my choice, that's HuggingFace because we are using Transformers for inference)
+- Every .safetensors model needs the .json files AND the model has to be named **model.safetensors** (Not my choice, that's HuggingFace because we are using Transformers for inference)
 
 ```
 ComfyUI/
