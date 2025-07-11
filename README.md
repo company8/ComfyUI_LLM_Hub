@@ -5,7 +5,7 @@ text-to-image prompt into a more detailed and improved prompt.
 
 ## 🤖 Usage
 
-(img/README.png "LLM Hub for ComfyUI")
+<img src="https://raw.githubusercontent.com/company8/ComfyUI_LLM_Hub/refs/heads/main/img/README.png" alt="LLM Hub for ComfyUI">
 
 ## 🛠️ Requirements
 
