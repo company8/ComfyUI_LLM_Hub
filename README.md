@@ -42,7 +42,7 @@ Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
 - You can delete "--verbose" if you don't want to see the process of the compling.
 - GGUF models don't need to be named "model.gguf".
 
-## LLM Settings 
+## ⚙️ LLM Settings 
 The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
 generation process and model behavior.
 
@@ -68,5 +68,5 @@ These parameters provide granular control over the text generation capabilities 
 users to fine-tune the behavior of the underlying models to best fit their application requirements.
 
 
-## License
+## 📄 License
 Released under the MIT License. Feel free to use and modify it for your projects, commercial or personal.
