@@ -6,11 +6,11 @@ text-to-image prompt into a more detailed and improved prompt.
 
 ## Requirements
 
-- **Create a directory named "LLMs" in "ComfyUI/models/text_encoders/LLMs"
-- **Place your LLM models there.
-- **Create a new directory for each LLM with the model name, so you don't get confused and the node doesn't use the wrong one.
-- **Every .safetensors model needs the .json files AND the model has to be named "model.safetensors" (Not my choice, that's HuggingFace because we are using Transformers for inference)
-- **Reasoning behind the directory is if you use HiDream and tried to generate without the llama as a T.E (Text Encoder) it would produce garbage, this way you can use the same model for both T.E and as a prompt generator.
+- Create a directory named "LLMs" in "ComfyUI/models/text_encoders/LLMs"
+- Place your LLM models there.
+- Create a new directory for each LLM with the model name, so you don't get confused and the node doesn't use the wrong one.
+- Every .safetensors model needs the .json files AND the model has to be named "model.safetensors" (Not my choice, that's HuggingFace because we are using Transformers for inference)
+- Reasoning behind the directory is if you use HiDream and tried to generate without the llama as a T.E (Text Encoder) it would produce garbage, this way you can use the same model for both T.E and as a prompt generator.
 
 If you get error message about missing `llama-cpp`, try these manual steps:
 
