@@ -10,7 +10,7 @@ text-to-image prompt into a more detailed and improved prompt.
 ## 📝 Requirements
 
 - Create a directory named **`LLMs`** inside **`ComfyUI/models/text_encoders/`**
-- Create a another new directory for each LLM with the model name inside **`LLMs`**, so you don't get confused and the node doesn't use the wrong one.
+- Create a another new directory for each LLM with the model name inside **`LLMs`**.
 - Place your LLM models in their respective directory.
 - Every .safetensors model needs the .json files and the model should be named **`model.safetensors`**
 
@@ -64,8 +64,7 @@ Breif overview of the parameters:
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
   to appear again. Default: `1.3`.
 
-These parameters provide granular control over the text generation capabilities of the `LLM Hub` Node, allowing
-users to fine-tune the behavior of the underlying models to best fit their application requirements.
+Wanan learn more about these paramaters, click HERE.
 
 
 ## 📄 License
