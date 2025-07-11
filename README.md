@@ -1,8 +1,11 @@
-# 🧠 LLM Hub
+## 🧠 LLM Hub
 
 A prompt-generator for ComfyUI, utilizing the power of a language model to turn a provided
 text-to-image prompt into a more detailed and improved prompt.
 
+## 🤖 Usage
+
+(img/README.png "LLM Hub for ComfyUI")
 
 ## 🛠️ Requirements
 
