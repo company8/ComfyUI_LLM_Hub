@@ -1,5 +1,5 @@
 transformers
-torch==2.6.0
+torch
 accelerate
 bitsandbytes
 llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on" 
