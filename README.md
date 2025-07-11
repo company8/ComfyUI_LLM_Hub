@@ -12,7 +12,7 @@ text-to-image prompt into a more detailed and improved prompt.
 - Create a directory named **`LLMs`** inside **`ComfyUI/models/text_encoders/`**
 - Create a another new directory for each LLM with the model name inside **`LLMs`**, so you don't get confused and the node doesn't use the wrong one.
 - Place your LLM models in their respective directory.
-- Every .safetensors model needs the .json files and the model should be named **`model.safetensors`**  (Not my choice, that's HuggingFace ecosystem) 
+- Every .safetensors model needs the .json files and the model should be named **`model.safetensors`**
 
 How your directory structure should look like:
 ```
