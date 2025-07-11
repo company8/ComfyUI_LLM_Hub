@@ -49,7 +49,7 @@ generation process and model behavior.
 *The values on this node are also the defaults that `LLM Hub`*
 *uses when `LLM Settings` isn't connected.*
 
-Below is a detailed overview of these parameters:
+Breif overview of the parameters:
 
 - **`temperature`**: Controls the randomness in the text generation process. Lower values make the model
   more confident in its predictions, leading to less variability in output. Higher values increase diversity but can
