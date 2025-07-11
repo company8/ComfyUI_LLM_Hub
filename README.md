@@ -4,7 +4,7 @@ A prompt-generator for ComfyUI, utilizing the power of a language model to turn 
 text-to-image prompt into a more detailed and improved prompt.
 
 
-## Requirements
+## 🛠️ Requirements
 
 - Create a directory named `LLMs` inside `ComfyUI/models/text_encoders/`
 - Create a another new directory for each LLM with the model name inside `LLMs`, so you don't get confused and the node doesn't use the wrong one.
