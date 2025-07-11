@@ -31,7 +31,7 @@ ComfyUI/
                 └── special_tokens_map.json
 ```
 
-Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage / error out. This way you can use the same model for both T.E and as a prompt generator.
+Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage or would error out. This way you can use the same model for as a T.E and as a prompt generator.
 
 If you get error message about missing `llama-cpp`, try these manual steps:
 
