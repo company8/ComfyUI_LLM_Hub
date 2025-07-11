@@ -20,7 +20,7 @@ ComfyUI/
             └── your_model_2
 ```
 
-Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage / error out, this way you can use the same model for both T.E and as a prompt generator.
+Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage / error out. This way you can use the same model for both T.E and as a prompt generator.
 
 If you get error message about missing `llama-cpp`, try these manual steps:
 
