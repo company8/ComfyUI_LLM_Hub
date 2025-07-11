@@ -36,7 +36,7 @@ If you get error message about missing **`llama-cpp`**, try these manual steps:
 
 - Run the following commands:
 ```
-python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on"
+pip install --verbose --config-settings=cmake.args="-DGGML_CUDA=on" llama-cpp-python
 ```
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU. 
 
