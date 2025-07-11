@@ -11,6 +11,7 @@ text-to-image prompt into a more detailed and improved prompt.
 - Place your LLM models in the respective directory.
 - Every .safetensors model needs the .json files AND the model has to be named **model.safetensors** (Not my choice, that's HuggingFace because we are using Transformers for inference)
 
+How your directory structure should look like:
 ```
 ComfyUI/
 └── models/
