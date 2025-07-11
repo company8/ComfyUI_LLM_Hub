@@ -25,13 +25,12 @@ ComfyUI/
             └── safetensors_model/
                 └── model.safetensors
                 └── config.json
-                └── generation_config.json
                 └── tokenizer.json
                 └── tokenizer_config.json
-                └── special_tokens_map.json
+                └── generation_config.json (Optional)
+                └── special_tokens_map.json (Optional)
 ```
 
-Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage or would error out. This way you can use the same model for as a T.E and as a prompt generator.
 
 If you get error message about missing **`llama-cpp`**, try these manual steps:
 
@@ -39,10 +38,9 @@ If you get error message about missing **`llama-cpp`**, try these manual steps:
 ```
 python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-DGGML_CUDA=on"
 ```
-Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
+Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU. You can also delete "--verbose" if you don't want to see the process of the compiling.
 
 **`Notes`**: 
-- You can delete "--verbose" if you don't want to see the process of the compiling.
 - GGUF models don't need to be named "model.gguf".
 
 ## ⚙️ LLM Settings 
