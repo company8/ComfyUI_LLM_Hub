@@ -16,8 +16,15 @@ ComfyUI/
 └── models/
     └── text_encoders/
         └── LLMs/
-            └── your_model_1
-            └── your_model_2
+            └── safetensors_model
+                └── model.safetensors
+                └── config.json
+                └── generation_config.json
+                └── tokenizer.json
+                └── tokenizer_config.json
+                └── special_tokens_map.json
+            └── GGUF_model
+                └── model.gguf
 ```
 
 Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage / error out. This way you can use the same model for both T.E and as a prompt generator.
@@ -30,8 +37,9 @@ python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-
 ```
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
 
-`Note:` You can delete "--verbose" if you don't want to see the process of the compling.
-
+`Notes:` 
+- You can delete "--verbose" if you don't want to see the process of the compling.
+- GGUF models don't need to be named "model.gguf".
 
 ## LLM Settings 
 The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
