@@ -9,10 +9,10 @@ text-to-image prompt into a more detailed and improved prompt.
 
 ## 🛠️ Requirements
 
-- Create a directory named `LLMs` inside `ComfyUI/models/text_encoders/`
-- Create a another new directory for each LLM with the model name inside `LLMs`, so you don't get confused and the node doesn't use the wrong one.
+- Create a directory named **`LLMs`** inside **`ComfyUI/models/text_encoders/`**
+- Create a another new directory for each LLM with the model name inside **`LLMs`**, so you don't get confused and the node doesn't use the wrong one.
 - Place your LLM models in their respective directory.
-- Every .safetensors model needs the .json files AND the model has to be named **model.safetensors** (Not my choice, that's HuggingFace because we are using Transformers for inference)
+- Every .safetensors model needs the .json files AND the model has to be named **`model.safetensors`** (Not my choice, that's HuggingFace because we are using Transformers for inference)
 
 How your directory structure should look like:
 ```
@@ -20,7 +20,7 @@ ComfyUI/
 └── models/
     └── text_encoders/
         └── LLMs/
-            └── **`GGUF_model/`**
+            └── GGUF_model/
                 └── model.gguf
             └── safetensors_model/
                 └── model.safetensors
@@ -33,7 +33,7 @@ ComfyUI/
 
 Reasoning behind the directory structure is if you use HiDream and tried to generate without the llama model as a T.E (Text Encoder) it would produce garbage or would error out. This way you can use the same model for as a T.E and as a prompt generator.
 
-If you get error message about missing `llama-cpp`, try these manual steps:
+If you get error message about missing **`llama-cpp`**, try these manual steps:
 
 - Run the following commands:
 ```
@@ -41,7 +41,7 @@ python -m pip install --verbose llama-cpp-python --config-settings=cmake.args="-
 ```
 Delete "--config-settings=cmake.args="-DGGML_CUDA=on" if you don't have a GPU.
 
-`Notes:` 
+**`Notes`**: 
 - You can delete "--verbose" if you don't want to see the process of the compling.
 - GGUF models don't need to be named "model.gguf".
 
