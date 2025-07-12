@@ -66,6 +66,7 @@ Breif overview of the parameters:
 ## 📚 Resources
 
 - <a href="https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832" target="_SEJ" rel="noreferrer">Parameter settings</a>
+- <a href="https://github.com/0xeb/TheBigPromptLibrary" target="_SEJ" rel="noreferrer">System prompts, instructions, etc.</a>
 
 ## 📄 License
 Released under the MIT License. Feel free to use and modify it for your projects, commercial or personal.
