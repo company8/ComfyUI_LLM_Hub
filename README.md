@@ -64,7 +64,7 @@ Breif overview of the parameters:
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
   to appear again. Default: `1.3`.
 
-Wanan learn more about these paramaters, click HERE.
+Wanna learn more about these paramaters, check out these articles.
 
 
 ## 📄 License
