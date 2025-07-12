@@ -65,6 +65,9 @@ Breif overview of the parameters:
 
 Wanna learn more about these paramaters, check out these articles.
 
+## 📚 Resources
+
+LINKS TO BE ADDED. 
 
 ## 📄 License
 Released under the MIT License. Feel free to use and modify it for your projects, commercial or personal.
