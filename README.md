@@ -1,7 +1,6 @@
 ## 🧠 LLM Hub
 
-A prompt-generator for ComfyUI, utilizing the power of a language model to turn a provided
-text-to-image prompt into a more detailed and improved prompt.
+Utilize the power of an LLM into ComfyUI to transform your text-to-image and text-to-video ideas into highly detailed and optimized prompts for generation while giving you full control. 
 
 ## 🤖 Usage
 
