@@ -53,7 +53,7 @@ Breif overview of the parameters:
 
 - **`temperature`**: Controls the randomness in the text generation process. Lower values make the model
   more confident in its predictions, leading to less variability in output. Higher values increase diversity but can
-  also introduce more randomness. Default: `1.0`.
+  also introduce more randomness. Default: `0.8`.
 - **`top_p`**: Also known as nucleus sampling, this parameter controls the cumulative probability distribution
   cutoff. The model will only consider the top p% of tokens with the highest probabilities for sampling. Reducing this
   value helps in controlling the generation quality by avoiding low-probability tokens. Default: `0.8`.
