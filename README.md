@@ -45,8 +45,7 @@ You can delete "--verbose" if you don't want to see the process of the compiling
 The `LLM Settings` offers a range of configurable parameters allowing for precise control over the text
 generation process and model behavior.
 
-*The values on this node are also the defaults that `LLM Hub`*
-*uses when `LLM Settings` isn't connected.*
+The values on this node are also the defaults that `LLM Hub` uses when `LLM Settings` isn't connected.
 
 Breif overview of the parameters:
 
@@ -63,7 +62,6 @@ Breif overview of the parameters:
   output, discouraging repetition. Values greater than `1` penalize tokens that have been used, making them less likely
   to appear again. Default: `1.3`.
 
-Wanna learn more about these paramaters, check out these articles.
 
 ## 📚 Resources
 
