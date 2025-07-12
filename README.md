@@ -65,7 +65,7 @@ Breif overview of the parameters:
 
 ## 📚 Resources
 
-- <a href="#" onclick='window.open("https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832");return false;'>Parameter settings</a>
+- <a href="(https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832" onclick='window.open("https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832");return false;'>Parameter settings</a>
 
 ## 📄 License
 Released under the MIT License. Feel free to use and modify it for your projects, commercial or personal.
